@@ -1,0 +1,42 @@
+{
+  "name": "ts-project",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc",
+    "prepare": "husky"
+  },
+  "author": "fanghsien.li<tcscc1989@hotmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "vitest",
+    "promisify"
+  ],
+  "devDependencies": {
+    "typescript-eslint": "8.29.1",
+    "vitest": "3.1.1",
+    "@eslint/css": "0.6.0",
+    "@eslint/js": "9.24.0",
+    "@eslint/json": "0.11.0",
+    "@eslint/markdown": "6.3.0",
+    "@typescript-eslint/eslint-plugin": "8.29.1",
+    "@typescript-eslint/parser": "8.29.1",
+    "eslint": "9.24.0",
+    "globals": "16.0.0",
+    "husky": "9.1.7",
+    "lint-staged": "15.5.1",
+    "prettier": "3.5.3",
+    "typescript": "5.8.3"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
